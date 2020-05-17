@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		9FA530AA246FB13E005870B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530A9246FB13E005870B4 /* AppDelegate.swift */; };
 		9FA530AC246FB13E005870B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530AB246FB13E005870B4 /* SceneDelegate.swift */; };
-		9FA530AE246FB13E005870B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530AD246FB13E005870B4 /* ViewController.swift */; };
+		9FA530AE246FB13E005870B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530AD246FB13E005870B4 /* LoginViewController.swift */; };
 		9FA530B1246FB13E005870B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA530AF246FB13E005870B4 /* Main.storyboard */; };
 		9FA530B3246FB141005870B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA530B2246FB141005870B4 /* Assets.xcassets */; };
 		9FA530B6246FB141005870B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA530B4246FB141005870B4 /* LaunchScreen.storyboard */; };
+		9FA530BE24713429005870B4 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530BD24713429005870B4 /* MainTabController.swift */; };
+		9FA530C024713DEB005870B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530BF24713DEB005870B4 /* HomeViewController.swift */; };
+		9FA530C224714168005870B4 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530C124714168005870B4 /* DonateViewController.swift */; };
+		9FA530C4247142AE005870B4 /* HomeCharityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530C3247142AE005870B4 /* HomeCharityCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9FA530A6246FB13E005870B4 /* Change-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Change-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA530A9246FB13E005870B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FA530AB246FB13E005870B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9FA530AD246FB13E005870B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FA530AD246FB13E005870B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9FA530B0246FB13E005870B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FA530B2246FB141005870B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FA530B5246FB141005870B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FA530B7246FB141005870B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA530BD24713429005870B4 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		9FA530BF24713DEB005870B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9FA530C124714168005870B4 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
+		9FA530C3247142AE005870B4 /* HomeCharityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCharityCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				9FA530A9246FB13E005870B4 /* AppDelegate.swift */,
 				9FA530AB246FB13E005870B4 /* SceneDelegate.swift */,
-				9FA530AD246FB13E005870B4 /* ViewController.swift */,
+				9FA530AD246FB13E005870B4 /* LoginViewController.swift */,
 				9FA530AF246FB13E005870B4 /* Main.storyboard */,
+				9FA530C124714168005870B4 /* DonateViewController.swift */,
+				9FA530BF24713DEB005870B4 /* HomeViewController.swift */,
+				9FA530BD24713429005870B4 /* MainTabController.swift */,
 				9FA530B2246FB141005870B4 /* Assets.xcassets */,
 				9FA530B4246FB141005870B4 /* LaunchScreen.storyboard */,
 				9FA530B7246FB141005870B4 /* Info.plist */,
+				9FA530C3247142AE005870B4 /* HomeCharityCell.swift */,
 			);
 			path = "Change-iOS";
 			sourceTree = "<group>";
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FA530AE246FB13E005870B4 /* ViewController.swift in Sources */,
+				9FA530C024713DEB005870B4 /* HomeViewController.swift in Sources */,
+				9FA530C4247142AE005870B4 /* HomeCharityCell.swift in Sources */,
+				9FA530C224714168005870B4 /* DonateViewController.swift in Sources */,
+				9FA530AE246FB13E005870B4 /* LoginViewController.swift in Sources */,
 				9FA530AA246FB13E005870B4 /* AppDelegate.swift in Sources */,
+				9FA530BE24713429005870B4 /* MainTabController.swift in Sources */,
 				9FA530AC246FB13E005870B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
