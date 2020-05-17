@@ -12,9 +12,32 @@ import UIKit
 class HomeViewController: UIViewController {    
     @IBOutlet weak var tableView: UITableView!
     
+    let defaults = UserDefaults.standard
     let dataSource = ["A", "B", "C"]
+    
+    var myCharities = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+}
+
+//MARK - Table View Delegate
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let donateVC = storyboard?.instantiateViewController(identifier: "DonateViewController") as! DonateViewController
+        
+        donateVC.detailText = dataSource[indexPath.row]
+        
+        navigationController?.pushViewController(donateVC, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
 
@@ -32,4 +55,3 @@ extension HomeViewController: UITableViewDataSource {
         return cell
     }
 }
-

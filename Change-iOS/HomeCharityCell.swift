@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// Extending native class here
 class HomeCharityCell: UITableViewCell {
     
     @IBOutlet weak var cellLabel: UILabel!

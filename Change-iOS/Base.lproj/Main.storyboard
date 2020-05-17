@@ -51,21 +51,21 @@
             </objects>
             <point key="canvasLocation" x="1933" y="1114"/>
         </scene>
-        <!--Search Charities-->
+        <!--Search View Controller-->
         <scene sceneID="3Wk-xD-r5C">
             <objects>
-                <viewController id="ebX-6a-cP6" sceneMemberID="viewController">
+                <viewController id="ebX-6a-cP6" customClass="SearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pnk-Kc-hfm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ZTq-Qb-SMT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search Charities" selectedImage="magnifyingglass" catalog="system" id="rtp-IH-Ncb"/>
+                    <navigationItem key="navigationItem" id="wMX-Jk-iGt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2C-a7-uyh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1934" y="441"/>
+            <point key="canvasLocation" x="2843.4782608695655" y="440.625"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="Yid-Gd-kvU">
@@ -79,7 +79,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="unv-pJ-F7e" customClass="HomeCharityCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="unv-pJ-F7e" customClass="HomeCharityCell">
                                         <rect key="frame" x="0.0" y="28" width="414" height="22.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="unv-pJ-F7e" id="KCa-hf-5LB">
@@ -169,7 +169,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="ub0-nB-Z4H" kind="relationship" relationship="viewControllers" id="ckj-nH-XgT"/>
-                        <segue destination="ebX-6a-cP6" kind="relationship" relationship="viewControllers" id="A8H-2h-IKO"/>
+                        <segue destination="G72-Wa-sFG" kind="relationship" relationship="viewControllers" id="A8H-2h-IKO"/>
                         <segue destination="St4-tM-eTz" kind="relationship" relationship="viewControllers" id="WIw-NQ-Yzm"/>
                     </connections>
                 </tabBarController>
@@ -195,6 +195,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQm-YJ-dGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1931.8840579710147" y="-206.25"/>
+        </scene>
+        <!--Search Charities-->
+        <scene sceneID="YPk-4D-VTt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G72-Wa-sFG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search Charities" selectedImage="magnifyingglass" catalog="system" id="rtp-IH-Ncb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NEi-Xh-uQh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ebX-6a-cP6" kind="relationship" relationship="rootViewController" id="1fj-Kz-QTs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ArK-ut-IjI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1933.3333333333335" y="440.625"/>
         </scene>
     </scenes>
     <resources>

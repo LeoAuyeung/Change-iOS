@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
         // Set initial viewcontroller screen
 //        mainTabController.selectedViewController = mainTabController.viewControllers[2]
         
+        // UIView animation
         present(mainTabController, animated: true, completion: nil)
     }
 }

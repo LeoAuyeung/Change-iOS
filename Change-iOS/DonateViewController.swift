@@ -15,5 +15,7 @@ class DonateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        detailLabel.text = detailText
     }
 }
