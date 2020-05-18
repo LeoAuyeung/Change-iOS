@@ -9,14 +9,13 @@
 import Foundation
 import UIKit
 
+// Delegate Protocol
 protocol MyCharitiesDelegate {
-//    func addCharity(target: String)
-//    func removeCharity(target: String)
     func didTapButton(target: String)
 }
 
+// Subclassing UITableViewCell with various features
 class CustomCell: UITableViewCell {
-    
     let defaults = UserDefaults.standard
     @IBOutlet weak var cellLabel: UILabel!
     @IBOutlet weak var cellButton: UIButton!

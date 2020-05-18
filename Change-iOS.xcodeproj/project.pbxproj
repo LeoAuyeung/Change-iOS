@@ -18,7 +18,9 @@
 		9FA530C624714C66005870B4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530C524714C66005870B4 /* SearchViewController.swift */; };
 		9FA530C82471F046005870B4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530C72471F046005870B4 /* DetailViewController.swift */; };
 		9FA530CA2471F1D8005870B4 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530C92471F1D8005870B4 /* CustomCell.swift */; };
-		9FA530CC24720533005870B4 /* CharityAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530CB24720533005870B4 /* CharityAPIService.swift */; };
+		9FA530D024728718005870B4 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530CF24728718005870B4 /* FormViewController.swift */; };
+		9FA530D224728B9E005870B4 /* CCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530D124728B9E005870B4 /* CCManager.swift */; };
+		9FA530D424728F69005870B4 /* CreditCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530D324728F69005870B4 /* CreditCardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +37,9 @@
 		9FA530C524714C66005870B4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9FA530C72471F046005870B4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9FA530C92471F1D8005870B4 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		9FA530CB24720533005870B4 /* CharityAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityAPIService.swift; sourceTree = "<group>"; };
+		9FA530CF24728718005870B4 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		9FA530D124728B9E005870B4 /* CCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCManager.swift; sourceTree = "<group>"; };
+		9FA530D324728F69005870B4 /* CreditCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,9 @@
 				9FA530C524714C66005870B4 /* SearchViewController.swift */,
 				9FA530C72471F046005870B4 /* DetailViewController.swift */,
 				9FA530C92471F1D8005870B4 /* CustomCell.swift */,
-				9FA530CB24720533005870B4 /* CharityAPIService.swift */,
+				9FA530CF24728718005870B4 /* FormViewController.swift */,
+				9FA530D124728B9E005870B4 /* CCManager.swift */,
+				9FA530D324728F69005870B4 /* CreditCardsViewController.swift */,
 			);
 			path = "Change-iOS";
 			sourceTree = "<group>";
@@ -156,11 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA530D024728718005870B4 /* FormViewController.swift in Sources */,
 				9FA530C024713DEB005870B4 /* HomeViewController.swift in Sources */,
 				9FA530C624714C66005870B4 /* SearchViewController.swift in Sources */,
-				9FA530CC24720533005870B4 /* CharityAPIService.swift in Sources */,
+				9FA530D224728B9E005870B4 /* CCManager.swift in Sources */,
 				9FA530AE246FB13E005870B4 /* LoginViewController.swift in Sources */,
 				9FA530AA246FB13E005870B4 /* AppDelegate.swift in Sources */,
+				9FA530D424728F69005870B4 /* CreditCardsViewController.swift in Sources */,
 				9FA530BE24713429005870B4 /* MainTabController.swift in Sources */,
 				9FA530AC246FB13E005870B4 /* SceneDelegate.swift in Sources */,
 				9FA530CA2471F1D8005870B4 /* CustomCell.swift in Sources */,

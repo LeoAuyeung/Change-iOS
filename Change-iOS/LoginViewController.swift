@@ -18,9 +18,6 @@ class LoginViewController: UIViewController {
     @IBAction func loginTapped(_ sender: Any) {
         let mainTabController = storyboard?.instantiateViewController(identifier: "MainTabController") as! MainTabController
         
-        // Set initial viewcontroller screen
-//        mainTabController.selectedViewController = mainTabController.viewControllers[2]
-        
         // UIView animation
         present(mainTabController, animated: true, completion: nil)
     }

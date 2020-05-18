@@ -11,6 +11,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var detailImage: UIImageView!
     var detailText : String?
     
     // use UserDefaults to save myCharities so that user keeps them upon restart app

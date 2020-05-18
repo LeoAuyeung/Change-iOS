@@ -10,21 +10,12 @@ import Foundation
 import UIKit
 import AVFoundation
 
-//protocol MyCharitiesDelegate {
-//    func addCharity(target: String)
-//    func removeCharity(target: String)
-//}
-
 class SearchViewController: UIViewController {
     
     var charities = [String]()
     
-//    // use UserDefaults to save myCharities so that user keeps them upon restart app
+    // use UserDefaults to save myCharities so that user keeps them upon restart app
     let defaults = UserDefaults.standard
-//    let defaults = ["123", "abc"]
-//    var myCharitiesProtocol: MyCharitiesProtocol!
-//    var image = "heart"
-//    var myCharities = [String]()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -55,16 +46,15 @@ class SearchViewController: UIViewController {
            if let data = webData {
               do {
                 let responseJson = try JSONDecoder().decode([charity].self, from: data)
-                print(responseJson)
                 for i in 0...10 {
                     self.charities.append(responseJson[i].charityName)
                 }
-                print(self.charities)
                 // reload
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-              } catch let error {
+              }
+              catch let error {
                  print(error)
               }
            }
@@ -84,9 +74,6 @@ extension SearchViewController: MyCharitiesDelegate {
             AudioServicesPlayAlertSound(SystemSoundID(1003))
             DispatchQueue.main.async {
                 self.tableView.reloadData()
-//                let HomeVC = HomeViewController.init()
-//                print(HomeVC)
-//                HomeVC.tableView.reloadData()
             }
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
         }
@@ -97,9 +84,6 @@ extension SearchViewController: MyCharitiesDelegate {
             AudioServicesPlayAlertSound(SystemSoundID(1004))
             DispatchQueue.main.async {
                 self.tableView.reloadData()
-//                let HomeVC = HomeViewController.init()
-//                print(HomeVC)
-//                HomeVC.tableView.reloadData()
             }
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
         }
