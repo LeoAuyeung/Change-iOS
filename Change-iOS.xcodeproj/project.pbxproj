@@ -15,9 +15,10 @@
 		9FA530B6246FB141005870B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA530B4246FB141005870B4 /* LaunchScreen.storyboard */; };
 		9FA530BE24713429005870B4 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530BD24713429005870B4 /* MainTabController.swift */; };
 		9FA530C024713DEB005870B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530BF24713DEB005870B4 /* HomeViewController.swift */; };
-		9FA530C224714168005870B4 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530C124714168005870B4 /* DonateViewController.swift */; };
-		9FA530C4247142AE005870B4 /* HomeCharityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530C3247142AE005870B4 /* HomeCharityCell.swift */; };
 		9FA530C624714C66005870B4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530C524714C66005870B4 /* SearchViewController.swift */; };
+		9FA530C82471F046005870B4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530C72471F046005870B4 /* DetailViewController.swift */; };
+		9FA530CA2471F1D8005870B4 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530C92471F1D8005870B4 /* CustomCell.swift */; };
+		9FA530CC24720533005870B4 /* CharityAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA530CB24720533005870B4 /* CharityAPIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +32,10 @@
 		9FA530B7246FB141005870B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FA530BD24713429005870B4 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		9FA530BF24713DEB005870B4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		9FA530C124714168005870B4 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
-		9FA530C3247142AE005870B4 /* HomeCharityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCharityCell.swift; sourceTree = "<group>"; };
 		9FA530C524714C66005870B4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9FA530C72471F046005870B4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9FA530C92471F1D8005870B4 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		9FA530CB24720533005870B4 /* CharityAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +72,15 @@
 				9FA530AB246FB13E005870B4 /* SceneDelegate.swift */,
 				9FA530AD246FB13E005870B4 /* LoginViewController.swift */,
 				9FA530AF246FB13E005870B4 /* Main.storyboard */,
-				9FA530C124714168005870B4 /* DonateViewController.swift */,
 				9FA530BF24713DEB005870B4 /* HomeViewController.swift */,
 				9FA530BD24713429005870B4 /* MainTabController.swift */,
 				9FA530B2246FB141005870B4 /* Assets.xcassets */,
 				9FA530B4246FB141005870B4 /* LaunchScreen.storyboard */,
 				9FA530B7246FB141005870B4 /* Info.plist */,
-				9FA530C3247142AE005870B4 /* HomeCharityCell.swift */,
 				9FA530C524714C66005870B4 /* SearchViewController.swift */,
+				9FA530C72471F046005870B4 /* DetailViewController.swift */,
+				9FA530C92471F1D8005870B4 /* CustomCell.swift */,
+				9FA530CB24720533005870B4 /* CharityAPIService.swift */,
 			);
 			path = "Change-iOS";
 			sourceTree = "<group>";
@@ -154,13 +157,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA530C024713DEB005870B4 /* HomeViewController.swift in Sources */,
-				9FA530C4247142AE005870B4 /* HomeCharityCell.swift in Sources */,
 				9FA530C624714C66005870B4 /* SearchViewController.swift in Sources */,
-				9FA530C224714168005870B4 /* DonateViewController.swift in Sources */,
+				9FA530CC24720533005870B4 /* CharityAPIService.swift in Sources */,
 				9FA530AE246FB13E005870B4 /* LoginViewController.swift in Sources */,
 				9FA530AA246FB13E005870B4 /* AppDelegate.swift in Sources */,
 				9FA530BE24713429005870B4 /* MainTabController.swift in Sources */,
 				9FA530AC246FB13E005870B4 /* SceneDelegate.swift in Sources */,
+				9FA530CA2471F1D8005870B4 /* CustomCell.swift in Sources */,
+				9FA530C82471F046005870B4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

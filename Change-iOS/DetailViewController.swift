@@ -1,5 +1,5 @@
 //
-//  DonateViewController.swift
+//  DetailViewController.swift
 //  Change-iOS
 //
 //  Created by Leo Au-Yeung on 5/17/20.
@@ -9,9 +9,12 @@
 import Foundation
 import UIKit
 
-class DonateViewController: UIViewController {
+class DetailViewController: UIViewController {
     @IBOutlet weak var detailLabel: UILabel!
-    var detailText: String?
+    var detailText : String?
+    
+    // use UserDefaults to save myCharities so that user keeps them upon restart app
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
