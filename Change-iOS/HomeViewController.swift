@@ -19,20 +19,21 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "My Charities"
+        // have tableView call getMyCharities again when adding or removing a charity from my list
+        NotificationCenter.default.addObserver(self, selector: #selector(getMyCharities), name: NSNotification.Name(rawValue: "load"), object: nil)
         
         tableView.delegate = self
         tableView.dataSource = self
         getMyCharities()
     }
     
-    func getMyCharities() {
+    @objc func getMyCharities() {
         let charities = defaults.object(forKey: "myCharities") as? [String] ?? [String]()
         myCharities = charities
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
     }
-    
     
 }
 

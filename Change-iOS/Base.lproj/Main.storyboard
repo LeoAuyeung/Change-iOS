@@ -45,7 +45,7 @@
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="7sg-zv-Pbh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Credit Cards" selectedImage="creditcard" catalog="system" id="G2Q-6L-bjP"/>
+                    <tabBarItem key="tabBarItem" title="Credit Cards" image="creditcard.fill" catalog="system" landscapeImage="creditcard.fill" selectedImage="creditcard.fill" id="G2Q-6L-bjP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38n-0D-UeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,7 +236,7 @@
         <scene sceneID="FAJ-1Q-L0M">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ub0-nB-Z4H" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" selectedImage="house.fill" catalog="system" id="ODc-9K-HwM"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" landscapeImage="house.fill" selectedImage="house.fill" id="ODc-9K-HwM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vo2-68-jBC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -255,7 +255,7 @@
         <scene sceneID="YPk-4D-VTt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G72-Wa-sFG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search Charities" selectedImage="magnifyingglass" catalog="system" id="rtp-IH-Ncb"/>
+                    <tabBarItem key="tabBarItem" title="Search Charities" image="magnifyingglass.circle.fill" catalog="system" landscapeImage="magnifyingglass.circle.fill" selectedImage="magnifyingglass.circle.fill" id="rtp-IH-Ncb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NEi-Xh-uQh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -272,8 +272,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="creditcard" catalog="system" width="128" height="91"/>
+        <image name="creditcard.fill" catalog="system" width="128" height="91"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>

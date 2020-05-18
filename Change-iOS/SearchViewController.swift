@@ -81,25 +81,27 @@ extension SearchViewController: MyCharitiesDelegate {
             // remove charity
             myCharities = myCharities.filter{$0 != "\(target)"}
             defaults.set(myCharities, forKey: "myCharities")
-            AudioServicesPlayAlertSound(SystemSoundID(1110))
+            AudioServicesPlayAlertSound(SystemSoundID(1003))
             DispatchQueue.main.async {
                 self.tableView.reloadData()
 //                let HomeVC = HomeViewController.init()
 //                print(HomeVC)
 //                HomeVC.tableView.reloadData()
             }
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
         }
         else {
             // add charity
             myCharities.append(target)
             defaults.set(myCharities, forKey: "myCharities")
-            AudioServicesPlayAlertSound(SystemSoundID(1112))
+            AudioServicesPlayAlertSound(SystemSoundID(1004))
             DispatchQueue.main.async {
                 self.tableView.reloadData()
 //                let HomeVC = HomeViewController.init()
 //                print(HomeVC)
 //                HomeVC.tableView.reloadData()
             }
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
         }
     }
 }
