@@ -14,19 +14,19 @@ class CCManager {
     
     private init(){}
     let defaults = UserDefaults.standard
-    var ccNumbers = [Int]()
-    var secCodes = [Int]()
-    var expDates = [Int]()
+    var ccNumbers = [String]()
+    var secCodes = [String]()
+    var expDates = [String]()
     var names = [String]()
     
     func getAllCards() {
-        let myCards = defaults.object(forKey: "myCards") as? [Int] ?? [Int]()
+        let myCards = defaults.object(forKey: "myCards") as? [String] ?? [String]()
         ccNumbers = myCards
     }
     
-    func addNewCard(ccNum: Int, secCode: Int, expDate: Int, name: String) {
+    func addNewCard(ccNum: String, secCode: String, expDate: String, name: String) {
         ccNumbers.append(ccNum)
-        var myCards = defaults.object(forKey: "myCards") as? [Int] ?? [Int]()
+        var myCards = defaults.object(forKey: "myCards") as? [String] ?? [String]()
         myCards.append(ccNum)
         defaults.set(myCards, forKey: "myCards")
         

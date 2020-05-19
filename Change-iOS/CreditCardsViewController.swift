@@ -12,7 +12,7 @@ import UIKit
 class CreditCardsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var myCards = [Int]()
+    var myCards = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,6 @@ class CreditCardsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         getMyCards()
-        print(CCManager.shared.ccNumbers)
     }
     
     @objc func getMyCards() {
@@ -44,6 +43,10 @@ class CreditCardsViewController: UIViewController {
 
 //MARK - Table View Delegate
 extension CreditCardsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }

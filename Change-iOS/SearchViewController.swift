@@ -94,8 +94,8 @@ extension SearchViewController: MyCharitiesDelegate {
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = storyboard?.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
-        
         detailVC.detailText = charities[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: false)
         
         navigationController?.pushViewController(detailVC, animated: true)
     }

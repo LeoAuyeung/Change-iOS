@@ -25,7 +25,7 @@ class FormViewController: UIViewController {
     }
     
     @IBAction func enterTapped(_ sender: Any) {
-        CCManager.shared.addNewCard(ccNum: Int(creditCardField.text!)!, secCode: Int(securityCodeField.text!)!, expDate: Int(expirationDateField.text!)!, name: nameField.text!)
+        CCManager.shared.addNewCard(ccNum: creditCardField.text ?? "", secCode: securityCodeField.text ?? "", expDate: expirationDateField.text ?? "", name: nameField.text ?? "")
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "loadcards"), object: nil)
         navigationController?.popViewController(animated: true)
     }
@@ -34,6 +34,7 @@ class FormViewController: UIViewController {
         creditCardField.resignFirstResponder()
         securityCodeField.resignFirstResponder()
         expirationDateField.resignFirstResponder()
+        nameField.resignFirstResponder()
     }
 }
 
